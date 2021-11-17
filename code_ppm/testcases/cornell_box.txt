@@ -1,0 +1,110 @@
+PerspectiveCamera {
+    center 50 44 210
+    direction 0 0 -1
+    up 0 1 0
+    angle 45
+    width 1024
+    height 768
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 7
+    Material {
+        color 0.75 0.25 0.25
+    }
+    
+    Material {
+        color 0.25 0.25 0.75
+    }
+    Material {
+        color 0.75 0.75 0.75
+    }
+    Material { 
+        color 0.9 0.9 0.9
+        type 1
+    }
+    Material { 
+        color 0.9 0.9 0.9
+        type 2
+    }
+    Material {
+        color 0 0 0
+        emission 12 12 12
+    }
+    Material {
+        color 0.25 0.75 0.25
+    }
+}
+
+Group {
+    numObjects 10
+    MaterialIndex 0
+    Plane {
+        normal 1 0 0
+        offset 0
+    }
+    
+    
+    
+    MaterialIndex 1
+    Plane {
+        normal -1 0 0
+        offset -99
+    }
+
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+    }
+
+    MaterialIndex 3
+    Sphere {
+        center 27 16.5 47
+        radius 16.5
+    }
+
+    MaterialIndex 4
+    Transform {
+		Translate  90 25 80
+		Scale  15 15 15 	
+        TriangleMesh {
+            obj_file mesh/glass.obj
+        }
+    }
+
+    MaterialIndex 5
+  
+    Triangle {
+        vertex0 30 81.599 81
+        vertex1 50 81.599 81
+        vertex2 50 81.599 61
+    }
+    Triangle {
+        vertex0 30 81.599 81
+        vertex1 30 81.599 61
+        vertex2 50 81.599 61
+    }
+    
+    MaterialIndex 6
+    Transform {
+    		Translate 60 10 100
+		Scale  50 50 50	
+        TriangleMesh {
+            obj_file mesh/bunny_1k.obj
+        }
+    }
+    
+}

@@ -1,0 +1,6 @@
+/home/zhy/ComputerGraphics/project/code/build/CMakeFiles/rebuild_cache.dir
+/home/zhy/ComputerGraphics/project/code/build/CMakeFiles/edit_cache.dir
+/home/zhy/ComputerGraphics/project/code/build/CMakeFiles/render.dir
+/home/zhy/ComputerGraphics/project/code/build/deps/vecmath/CMakeFiles/rebuild_cache.dir
+/home/zhy/ComputerGraphics/project/code/build/deps/vecmath/CMakeFiles/edit_cache.dir
+/home/zhy/ComputerGraphics/project/code/build/deps/vecmath/CMakeFiles/vecmath.dir

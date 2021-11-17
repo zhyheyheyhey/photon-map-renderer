@@ -1,0 +1,146 @@
+Lights {
+    PointLight {
+        position 90 70 80
+        color 160000 320000 160000 
+    }
+    PointLight {
+        position 90 70 80
+        color 160000 320000 160000 
+    }
+}
+
+PerspectiveCamera {
+    center 150 44 210
+    direction -0.436 0 -0.81
+    up 0 1 0
+    angle 45
+    width 1920
+    height 1440
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 9
+    Material {
+        color 0.886 0.28 0.125
+        type 2
+    }
+    
+    Material {
+        color 0.25 0.25 0.75
+    }
+    Material {
+        color 0.75 0.75 0.75
+    }
+    Material { 
+        color 0.15 0.15 0.15
+    }
+    Material { 
+        color 0.25 0.74 0.9
+        type 2
+    }
+    Material {
+        color 0 0 0
+        emission 12 12 12
+    }
+    Material {
+        color 0.4 0.4 0.4
+    }
+    Material {
+        color 0.75 0.25 0.25
+    }
+    Material {
+    	color 0.75 0.75 0.75
+    }
+}
+
+Group {
+    numObjects 9
+    MaterialIndex 7
+    Plane {
+        normal 1 0 0
+        offset 0
+        image map/wall2.ppm
+        0 0 50
+        0 50 0
+        0. 0.
+    }
+    
+
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+        image map/wall1.ppm
+        12 0 0 
+        0 12 0
+        0. 0.
+    }
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+        image map/ceiling.ppm
+        100 0 0 
+        0 0 100 
+        0. 0.
+    }
+
+
+    MaterialIndex 0
+    Transform {
+    		Translate  130 10 60
+		Scale  10 40 10
+		XRotate 90
+        TriangleMesh {
+            obj_file mesh/glass1.obj
+        }
+    }
+    
+    
+    MaterialIndex 4
+    Transform {
+    		Translate 40 15 80
+		Scale  20 20 20
+		YRotate 45	
+        TriangleMesh {
+            obj_file mesh/fixed.perfect.dragon.100K.0.07.obj
+        }
+    }
+    
+    MaterialIndex 8
+    Transform {
+    		Translate 135 0 80
+		    Scale  0.03 0.03 0.03
+            YRotate 180
+            XRotate -90
+        TriangleMesh {
+            obj_file mesh/chair.obj
+        }
+    }
+
+    Transform {
+    		Translate 75 0 80
+		    Scale  0.03 0.03 0.03
+            XRotate -90
+        TriangleMesh {
+            obj_file mesh/chair.obj
+        }
+    }
+
+    MaterialIndex 3
+    Transform {
+    		Translate 105 0 80
+		    Scale  0.03 0.06 0.06
+            XRotate -90
+        TriangleMesh {
+            obj_file mesh/table.obj
+        }
+    }
+}

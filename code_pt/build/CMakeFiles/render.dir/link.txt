@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -O3 -DNDEBUG  -rdynamic CMakeFiles/render.dir/src/image.cpp.o CMakeFiles/render.dir/src/main.cpp.o CMakeFiles/render.dir/src/mesh.cpp.o CMakeFiles/render.dir/src/scene_parser.cpp.o  -o ../bin/render  deps/vecmath/libvecmath.a 
